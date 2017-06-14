@@ -8,8 +8,6 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.Html;
-import android.text.Spannable;
-import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
 import android.text.style.BulletSpan;
@@ -43,20 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         mBulletGapWidth = getResources().getDimensionPixelOffset(R.dimen.bullet_gap_width);
 
-//        String s = "<p style=\"text-decoration: line-through\">test</p>\n"
-//                + "        <p style=\"font-size: 28px\">Hello</p>\n"
-//                + "        <p style=\"font-size: 28em\">Hello</p>\n"
-//                + "        <p style=\"color: blue\">Hello</p>";
-
-        String s = "<p style=\"font-size: 14px\">Hello</p>";
-//        String s = "<p style=\"font-size: 1em\">Hello</p>";
-//        String s = "<p style=\"text-decoration: line-through\">Hello</p>";
-
-        SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder();
-//        s.setSpan(mark, len, len, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
-
-        mTvHello.setText(HtmlCompat.fromHtml(this, s, HtmlCompat.FROM_HTML_MODE_LEGACY));
-//        update();
+        update();
     }
 
     @Override
